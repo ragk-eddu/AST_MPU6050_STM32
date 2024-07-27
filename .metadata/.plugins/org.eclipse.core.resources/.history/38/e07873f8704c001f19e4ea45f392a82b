@@ -92,7 +92,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
-//  MX_I2C3_Init();
+  MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
   HAL_I2C_Init(&hi2c1);
   while (MPU6050_Init(&MPU60501, &hi2c1) == 1);
