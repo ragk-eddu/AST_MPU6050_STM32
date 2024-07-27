@@ -100,7 +100,7 @@ int main(void)
   HAL_I2C_Init(&hi2c2);
   while (MPU6050_Init(&MPU60502, &hi2c2) == 1);
   HAL_I2C_Init(&hi2c3);
-  while (MPU6050_Init(&MPU60503, &hi2c3) == 1);
+  while (MPU6050_Init(&hi2c3) == 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
