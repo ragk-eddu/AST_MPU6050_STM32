@@ -1,10 +1,10 @@
-20:41:17 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+20:40:25 **** Incremental Build of configuration Debug for project MECSOL2024 ****
 make -j8 all 
 arm-none-eabi-size  MECSOL2024.elf 
    text	   data	    bss	    dec	    hex	filename
-  31204	    488	   2304	  33996	   84cc	MECSOL2024.elf
+  30892	    488	   2304	  33684	   8394	MECSOL2024.elf
 Finished building: default.size.stdout
  
 
-20:41:17 Build Finished. 0 errors, 0 warnings. (took 262ms)
+20:40:25 Build Finished. 0 errors, 0 warnings. (took 379ms)
 
