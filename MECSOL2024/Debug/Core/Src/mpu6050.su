@@ -1,6 +1,6 @@
-../Core/Src/mpu6050.c:56:9:MPU6050_Init	40	static
-../Core/Src/mpu6050.c:97:6:MPU6050_Read_Accel	40	static
-../Core/Src/mpu6050.c:119:6:MPU6050_Read_Gyro	40	static
-../Core/Src/mpu6050.c:140:6:MPU6050_Read_Temp	40	static
-../Core/Src/mpu6050.c:152:6:MPU6050_Read_All	112	static
-../Core/Src/mpu6050.c:200:8:Kalman_getAngle	104	static
+../Core/Src/mpu6050.c:43:9:MPU6050_Init	48	static
+../Core/Src/mpu6050.c:85:6:MPU6050_Read_Accel	40	static
+../Core/Src/mpu6050.c:107:6:MPU6050_Read_Gyro	40	static
+../Core/Src/mpu6050.c:128:6:MPU6050_Read_Temp	40	static
+../Core/Src/mpu6050.c:140:6:MPU6050_Read_All	112	static
+../Core/Src/mpu6050.c:188:8:Kalman_getAngle	104	static
