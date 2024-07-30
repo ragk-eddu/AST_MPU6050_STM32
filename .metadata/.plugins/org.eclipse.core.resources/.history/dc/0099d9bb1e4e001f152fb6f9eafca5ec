@@ -109,8 +109,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_Read_All(&hi2c1, &MPU60501, 1);
-	  MPU6050_Read_All(&hi2c2, &MPU60502, 1);
+	  MPU6050_Read_All(&hi2c1, &MPU60501, &adress == 1);
+	  MPU6050_Read_All(&hi2c2, &MPU60502);
 	  HAL_Delay (100);
   }
   /* USER CODE END 3 */
