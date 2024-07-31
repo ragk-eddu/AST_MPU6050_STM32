@@ -1,0 +1,57 @@
+2024-07-30 00:20:58,382 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-30 00:20:58,400 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-30 00:20:59,633 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-30 00:20:59,634 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:07,267 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 648596080 Bytes (1073741824)
+2024-07-30 00:21:08,018 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-07-30 00:21:08,018 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2024-07-30 00:21:08,019 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2024-07-30 00:21:08,019 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-07-30 00:21:08,019 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-07-30 00:21:08,020 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-30 00:21:08,020 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-30 00:21:08,020 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2024-07-30 00:21:08,023 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2024-07-30 00:21:08,037 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,037 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,039 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,039 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,042 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,042 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2024-07-30 00:21:08,381 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\MXTmpFiles\license.tmp_save
+2024-07-30 00:21:09,220 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\MXTmpFiles\license.tmp
+2024-07-30 00:21:09,363 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\gpio.c_save
+2024-07-30 00:21:09,630 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\gpio.c
+2024-07-30 00:21:09,668 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\gpio.h_save
+2024-07-30 00:21:09,855 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\gpio.h
+2024-07-30 00:21:10,343 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\i2c.c_save
+2024-07-30 00:21:10,725 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\i2c.c
+2024-07-30 00:21:10,769 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\i2c.h_save
+2024-07-30 00:21:10,980 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\i2c.h
+2024-07-30 00:21:11,029 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\usart.c_save
+2024-07-30 00:21:11,247 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\usart.c
+2024-07-30 00:21:11,259 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\usart.h_save
+2024-07-30 00:21:11,399 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\usart.h
+2024-07-30 00:21:11,441 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\stm32f4xx_it.c_save
+2024-07-30 00:21:11,605 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\stm32f4xx_it.c
+2024-07-30 00:21:11,639 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\stm32f4xx_it.h_save
+2024-07-30 00:21:11,768 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\stm32f4xx_it.h
+2024-07-30 00:21:11,820 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\stm32f4xx_hal_msp.c_save
+2024-07-30 00:21:12,096 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\stm32f4xx_hal_msp.c
+2024-07-30 00:21:12,113 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\MXTmpFiles\system.tmp_save
+2024-07-30 00:21:12,188 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\MXTmpFiles\system.tmp
+2024-07-30 00:21:12,233 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-07-30 00:21:12,365 [INFO] CodeEngine:335 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\stm32f4xx_hal_conf.h
+2024-07-30 00:21:12,516 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\main.h_save
+2024-07-30 00:21:12,780 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Inc\main.h
+2024-07-30 00:21:12,820 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\main.c_save
+2024-07-30 00:21:13,127 [INFO] CodeEngine:279 - Generated code: C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\Core\Src\main.c
+2024-07-30 00:21:13,638 [INFO] ProjectBuilder:3163 - Time for Copy HAL[2] : 2mS.
+2024-07-30 00:21:13,654 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-07-30 00:21:13,933 [INFO] ConfigFileManager:1503 - The Die is : DIE431
+2024-07-30 00:21:13,968 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-07-30 00:21:13,996 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-07-30 00:21:14,013 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-07-30 00:21:14,044 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-07-30 00:21:14,072 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-07-30 00:21:14,094 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

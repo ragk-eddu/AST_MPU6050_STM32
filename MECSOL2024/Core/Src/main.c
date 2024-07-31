@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,6 +47,9 @@
 
 /* USER CODE BEGIN PV */
 MPU6050_t MPU60501;
+int testType;
+int testTime;
+int totalTime;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -91,7 +95,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-  HAL_I2C_Init(&hi2c1);
+//  HAL_I2C_Init(&hi2c1);
   while (MPU6050_Init(&MPU60501, &hi2c1) == 1);
   /* USER CODE END 2 */
 
@@ -103,7 +107,22 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  MPU6050_Read_All(&hi2c1, &MPU60501);
+//	  scanf("%d",testType);
+//	  scanf("%d",testTime);
+	  printf("\t%d\t\n\r",MPU60501.Accel_Z_RAW);
 	  HAL_Delay (100);
+//	  testType = 1;
+//	  if (testType == 1) {
+//		  while (totalTime < testTime*1000)
+//		  {
+//			  printf("\t%d\t",MPU60501.Accel_Z_RAW);
+//
+//			  totalTime = 100 + totalTime;
+//		  }
+////		  printf("END!");
+//	  } else {
+////		  printf("END!");
+//	  }
   }
   /* USER CODE END 3 */
 }
