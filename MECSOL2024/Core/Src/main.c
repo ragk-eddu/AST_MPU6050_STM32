@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,6 +48,7 @@
 /* USER CODE BEGIN PV */
 MPU6050_t MPU60501;
 MPU6050_t MPU60502;
+int a;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -111,6 +113,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  MPU6050_Read_All(&hi2c1, &MPU60501, 1);
 	  MPU6050_Read_All(&hi2c2, &MPU60502, 1);
+	  printf("%d\n\r",MPU60501.Accel_Z_RAW);
+	  printf("%d\t",MPU60502.Accel_Z_RAW);
 	  HAL_Delay (100);
   }
   /* USER CODE END 3 */
