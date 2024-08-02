@@ -121,7 +121,7 @@ int main(void)
 	  printf("%d\t",MPU60502.Accel_Z_RAW);
 	  printf("%d\t",MPU60503.Accel_Z_RAW);
 	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
-	  HAL_Delay (100);
+	  HAL_Delay (10);
   }
   /* USER CODE END 3 */
 }
