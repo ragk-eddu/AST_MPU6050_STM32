@@ -1858,18 +1858,18 @@ int main(void)
   HAL_I2C_Init(&hi2c3);
  80012b4:	4818      	ldr	r0, [pc, #96]	@ (8001318 <main+0xb4>)
  80012b6:	f001 f97b 	bl	80025b0 <HAL_I2C_Init>
-  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR + 2) == 1);
  80012ba:	bf00      	nop
- 80012bc:	22d0      	movs	r2, #208	@ 0xd0
+ 80012bc:	22d2      	movs	r2, #210	@ 0xd2
  80012be:	4916      	ldr	r1, [pc, #88]	@ (8001318 <main+0xb4>)
  80012c0:	4816      	ldr	r0, [pc, #88]	@ (800131c <main+0xb8>)
  80012c2:	f000 f8b1 	bl	8001428 <MPU6050_Init>
  80012c6:	4603      	mov	r3, r0
  80012c8:	2b01      	cmp	r3, #1
  80012ca:	d0f7      	beq.n	80012bc <main+0x58>
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR + 1) == 1);
+  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR) == 1);
  80012cc:	bf00      	nop
- 80012ce:	22d1      	movs	r2, #209	@ 0xd1
+ 80012ce:	22d0      	movs	r2, #208	@ 0xd0
  80012d0:	4911      	ldr	r1, [pc, #68]	@ (8001318 <main+0xb4>)
  80012d2:	4813      	ldr	r0, [pc, #76]	@ (8001320 <main+0xbc>)
  80012d4:	f000 f8a8 	bl	8001428 <MPU6050_Init>
