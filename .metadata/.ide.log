@@ -351,3 +351,12 @@
 2024-08-02 12:58:29,537 [ERROR] AdobePublisher:162 - Exception while opening the connection: java.net.SocketTimeoutException: Read timed out
 2024-08-02 12:58:37,199 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
 2024-08-02 13:04:40,106 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-08-02 13:10:35,369 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-08-02 13:10:37,513 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2024-08-02 14:55:41,083 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 14:55:41,083 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 14:55:41,084 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 14:55:41,122 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 14:55:41,123 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 14:55:41,123 [ERROR] ConfigurationRetriever:142 - IOException on connection: sw-center.st.com
+2024-08-02 15:42:27,752 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
