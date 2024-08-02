@@ -21,7 +21,6 @@
 #include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
-#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -117,10 +116,6 @@ int main(void)
 	  MPU6050_Read_All(&hi2c2, &MPU60502);
 	  MPU6050_Read_All(&hi2c3, &MPU60503);
 	  MPU6050_Read_All(&hi2c3, &MPU60504);
-//	  printf("%d\t",MPU60501.Accel_Z_RAW);
-//	  printf("%d\t",MPU60502.Accel_Z_RAW);
-//	  printf("%d\t",MPU60503.Accel_Z_RAW);
-//	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
 	  HAL_Delay (100);
   }
   /* USER CODE END 3 */
