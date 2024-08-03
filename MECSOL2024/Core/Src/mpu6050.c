@@ -137,7 +137,7 @@ void MPU6050_Read_Temp(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
     DataStruct->Temperature = (float) ((int16_t) temp / (float) 340.0 + (float) 36.53);
 }
 
-void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
+void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct, float cX, float cY, float cZ) {
     uint8_t Rec_Data[14];
     int16_t temp;
 
@@ -156,7 +156,15 @@ void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
     DataStruct->Ax = DataStruct->Accel_X_RAW / 16384.0;
     DataStruct->Ay = DataStruct->Accel_Y_RAW / 16384.0;
     DataStruct->Az = DataStruct->Accel_Z_RAW / Accel_Z_corrector;
+
+    // Corrections
+
+    DataStruct->Ax = (float) (DataStruct->Ax * (float) cX );
+    DataStruct->Ay = (float) (DataStruct->Ay * (float) cY );
+    DataStruct->Az = (float) (DataStruct->Az * (float) cZ );
+
     DataStruct->Temperature = (float) ((int16_t) temp / (float) 340.0 + (float) 36.53);
+
     DataStruct->Gx = DataStruct->Gyro_X_RAW / 131.0;
     DataStruct->Gy = DataStruct->Gyro_Y_RAW / 131.0;
     DataStruct->Gz = DataStruct->Gyro_Z_RAW / 131.0;
@@ -212,5 +220,33 @@ double Kalman_getAngle(Kalman_t *Kalman, double newAngle, double newRate, double
     Kalman->P[1][1] -= K[1] * P01_temp;
 
     return Kalman->angle;
+}
+
+void Calibration(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct, float cX, float cY, float cZ) {
+
+	int16_t t = 0;
+	int16_t sX = 0;
+	int16_t sY = 0;
+	int16_t sZ = 0;
+
+	while (timer < 5000) {
+
+		MPU6050_Read_All(*I2Cx, *DataStruct, *cX, *cY, *cZ);
+
+		sX += (int16_t) (sX + DataStruct->Accel_X_RAW);
+		sY += (int16_t) (sY + DataStruct->Accel_Y_RAW);
+		sZ += (int16_t) (sZ + DataStruct->Accel_Z_RAW);
+
+		t += t + 1;
+	}
+
+	int16_t avgX = (int16_t) (sX / 1000);
+	int16_t avgY = (int16_t) (sY / 1000);
+	int16_t avgZ = (int16_t) (sZ / 1000);
+
+	DataStruct->Accel_X_RAW = (int16_t) (DataStruct->Accel_X_RAW - avgX);
+	DataStruct->Accel_Y_RAW = (int16_t) (DataStruct->Accel_Y_RAW - avgY);
+	DataStruct->Accel_Z_RAW = (int16_t) (DataStruct->Accel_Z_RAW - avgZ);
+
 };
 

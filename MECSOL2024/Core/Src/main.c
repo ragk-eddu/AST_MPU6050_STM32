@@ -50,6 +50,8 @@ MPU6050_t MPU60501;
 MPU6050_t MPU60502;
 MPU6050_t MPU60503;
 MPU6050_t MPU60504;
+MPU6050_t MPU60505;
+MPU6050_t MPU60506;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,11 +101,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_I2C_Init(&hi2c1);
   while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60502, &hi2c1, MPU6050_ADDR+2) == 1);
   HAL_I2C_Init(&hi2c2);
-  while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60503, &hi2c2, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60504, &hi2c2, MPU6050_ADDR+2) == 1);
   HAL_I2C_Init(&hi2c3);
-  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1);
+  while (MPU6050_Init(&MPU60505, &hi2c3, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60506, &hi2c3, MPU6050_ADDR+2) == 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -113,14 +117,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_Read_All(&hi2c1, &MPU60501);
-	  MPU6050_Read_All(&hi2c2, &MPU60502);
-	  MPU6050_Read_All(&hi2c3, &MPU60503);
-	  MPU6050_Read_All(&hi2c3, &MPU60504);
-	  printf("%d\t",MPU60501.Accel_Z_RAW);
-	  printf("%d\t",MPU60502.Accel_Z_RAW);
-	  printf("%d\t",MPU60503.Accel_Z_RAW);
-	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
+
+	  MPU6050_Read_All(&hi2c1, &MPU60501, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c1, &MPU60502, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c2, &MPU60503, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c2, &MPU60504, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60505, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60506, 1, 1, 1);
+
+	  printf("%f\t",MPU60501.KalmanAngleX);
+	  printf("%f\t",MPU60502.KalmanAngleX);
+	  printf("%f\t",MPU60503.KalmanAngleX);
+	  printf("%f\t",MPU60504.KalmanAngleX);
+	  printf("%f\t",MPU60505.KalmanAngleX);
+	  printf("%f\t\n\r",MPU60506.KalmanAngleX);
 	  HAL_Delay (10);
   }
   /* USER CODE END 3 */
