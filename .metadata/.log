@@ -16,3 +16,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-07-27 19:48:08.502
 !MESSAGE Indexed 'MECSOL2024' (10 sources, 91 headers) in 2.37 sec: 4,927 declarations; 9,198 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.014%)
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-08-03 17:34:45.902
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.service.GDBBackend$MonitorJob

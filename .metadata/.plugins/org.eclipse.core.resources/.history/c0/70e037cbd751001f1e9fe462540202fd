@@ -231,7 +231,7 @@ void Calibration(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct, float cX, float
 
 	while (timer < 5000) {
 
-		MPU6050_Read_All(*I2Cx, *DataStruct, cX, cY, cZ);
+		MPU6050_Read_All(*I2Cx, *DataStruct, *cX, *cY, *cZ);
 
 		sX += (int16_t) (sX + DataStruct->Accel_X_RAW);
 		sY += (int16_t) (sY + DataStruct->Accel_Y_RAW);
