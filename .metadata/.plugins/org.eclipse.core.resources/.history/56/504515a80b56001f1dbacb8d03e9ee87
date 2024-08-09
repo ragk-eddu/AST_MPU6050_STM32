@@ -25,6 +25,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -102,8 +103,7 @@ int main(void)
   while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1);
   HAL_I2C_Init(&hi2c3);
   while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
-
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR + 1) == 1);
+  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR + 2) == 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -117,7 +117,12 @@ int main(void)
 	  MPU6050_Read_All(&hi2c2, &MPU60502);
 	  MPU6050_Read_All(&hi2c3, &MPU60503);
 	  MPU6050_Read_All(&hi2c3, &MPU60504);
-	  HAL_Delay (100);
+	  printf("%d\t",MPU60501.Accel_X_RAW);
+	  printf("%d\t",MPU60502.Accel_X_RAW);
+	  printf("%d\t",MPU60503.Accel_X_RAW);
+	  printf("%d\t\n\r",MPU60504.Accel_X_RAW);
+
+	  HAL_Delay (0);
   }
   /* USER CODE END 3 */
 }

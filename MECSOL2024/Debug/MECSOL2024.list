@@ -1459,7 +1459,7 @@ void MX_I2C1_Init(void)
  80010d4:	4b12      	ldr	r3, [pc, #72]	@ (8001120 <MX_I2C1_Init+0x50>)
  80010d6:	4a13      	ldr	r2, [pc, #76]	@ (8001124 <MX_I2C1_Init+0x54>)
  80010d8:	601a      	str	r2, [r3, #0]
-  hi2c1.Init.ClockSpeed = 100000;
+  hi2c1.Init.ClockSpeed = 400000;
  80010da:	4b11      	ldr	r3, [pc, #68]	@ (8001120 <MX_I2C1_Init+0x50>)
  80010dc:	4a12      	ldr	r2, [pc, #72]	@ (8001128 <MX_I2C1_Init+0x58>)
  80010de:	605a      	str	r2, [r3, #4]
@@ -1510,7 +1510,7 @@ void MX_I2C1_Init(void)
  800111e:	bd80      	pop	{r7, pc}
  8001120:	20000204 	.word	0x20000204
  8001124:	40005400 	.word	0x40005400
- 8001128:	000186a0 	.word	0x000186a0
+ 8001128:	00061a80 	.word	0x00061a80
 
 0800112c <MX_I2C2_Init>:
 /* I2C2 init function */
@@ -1527,7 +1527,7 @@ void MX_I2C2_Init(void)
  8001130:	4b12      	ldr	r3, [pc, #72]	@ (800117c <MX_I2C2_Init+0x50>)
  8001132:	4a13      	ldr	r2, [pc, #76]	@ (8001180 <MX_I2C2_Init+0x54>)
  8001134:	601a      	str	r2, [r3, #0]
-  hi2c2.Init.ClockSpeed = 100000;
+  hi2c2.Init.ClockSpeed = 400000;
  8001136:	4b11      	ldr	r3, [pc, #68]	@ (800117c <MX_I2C2_Init+0x50>)
  8001138:	4a12      	ldr	r2, [pc, #72]	@ (8001184 <MX_I2C2_Init+0x58>)
  800113a:	605a      	str	r2, [r3, #4]
@@ -1578,7 +1578,7 @@ void MX_I2C2_Init(void)
  800117a:	bd80      	pop	{r7, pc}
  800117c:	20000258 	.word	0x20000258
  8001180:	40005800 	.word	0x40005800
- 8001184:	000186a0 	.word	0x000186a0
+ 8001184:	00061a80 	.word	0x00061a80
 
 08001188 <MX_I2C3_Init>:
 /* I2C3 init function */
@@ -1595,7 +1595,7 @@ void MX_I2C3_Init(void)
  800118c:	4b12      	ldr	r3, [pc, #72]	@ (80011d8 <MX_I2C3_Init+0x50>)
  800118e:	4a13      	ldr	r2, [pc, #76]	@ (80011dc <MX_I2C3_Init+0x54>)
  8001190:	601a      	str	r2, [r3, #0]
-  hi2c3.Init.ClockSpeed = 100000;
+  hi2c3.Init.ClockSpeed = 400000;
  8001192:	4b11      	ldr	r3, [pc, #68]	@ (80011d8 <MX_I2C3_Init+0x50>)
  8001194:	4a12      	ldr	r2, [pc, #72]	@ (80011e0 <MX_I2C3_Init+0x58>)
  8001196:	605a      	str	r2, [r3, #4]
@@ -1646,7 +1646,7 @@ void MX_I2C3_Init(void)
  80011d6:	bd80      	pop	{r7, pc}
  80011d8:	200002ac 	.word	0x200002ac
  80011dc:	40005c00 	.word	0x40005c00
- 80011e0:	000186a0 	.word	0x000186a0
+ 80011e0:	00061a80 	.word	0x00061a80
 
 080011e4 <HAL_I2C_MspInit>:
 
@@ -1983,7 +1983,7 @@ int main(void)
  8001412:	4603      	mov	r3, r0
  8001414:	2b01      	cmp	r3, #1
  8001416:	d0f7      	beq.n	8001408 <main+0x58>
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1);
+  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR + 2) == 1);
  8001418:	bf00      	nop
  800141a:	22d2      	movs	r2, #210	@ 0xd2
  800141c:	491f      	ldr	r1, [pc, #124]	@ (800149c <main+0xec>)

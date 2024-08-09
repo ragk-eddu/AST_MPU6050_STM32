@@ -21,11 +21,11 @@
 #include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
-#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,7 +103,7 @@ int main(void)
   while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1);
   HAL_I2C_Init(&hi2c3);
   while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1);
+  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR + 2) == 1);
   /* USER CODE END 2 */
 
   /* Infinite loop */

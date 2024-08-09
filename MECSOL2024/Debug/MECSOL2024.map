@@ -4883,26 +4883,26 @@ LOAD C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x00013c83       0x58 ./Core/Src/gpio.o
  .debug_macro   0x00013cdb      0x1ec ./Core/Src/i2c.o
  .debug_macro   0x00013ec7      0x2f5 ./Core/Src/main.o
- .debug_macro   0x000141bc       0x61 ./Core/Src/main.o
- .debug_macro   0x0001421d       0x2a ./Core/Src/main.o
- .debug_macro   0x00014247       0x43 ./Core/Src/main.o
- .debug_macro   0x0001428a       0x34 ./Core/Src/main.o
- .debug_macro   0x000142be       0x16 ./Core/Src/main.o
- .debug_macro   0x000142d4       0x35 ./Core/Src/main.o
- .debug_macro   0x00014309      0x369 ./Core/Src/main.o
- .debug_macro   0x00014672       0x10 ./Core/Src/main.o
- .debug_macro   0x00014682       0x16 ./Core/Src/main.o
- .debug_macro   0x00014698       0x43 ./Core/Src/main.o
- .debug_macro   0x000146db       0x34 ./Core/Src/main.o
- .debug_macro   0x0001470f       0x10 ./Core/Src/main.o
- .debug_macro   0x0001471f       0x58 ./Core/Src/main.o
- .debug_macro   0x00014777       0x8e ./Core/Src/main.o
- .debug_macro   0x00014805       0x1c ./Core/Src/main.o
- .debug_macro   0x00014821      0x177 ./Core/Src/main.o
- .debug_macro   0x00014998       0x16 ./Core/Src/main.o
- .debug_macro   0x000149ae       0x16 ./Core/Src/main.o
- .debug_macro   0x000149c4      0x146 ./Core/Src/main.o
- .debug_macro   0x00014b0a       0x40 ./Core/Src/main.o
+ .debug_macro   0x000141bc       0x40 ./Core/Src/main.o
+ .debug_macro   0x000141fc       0x61 ./Core/Src/main.o
+ .debug_macro   0x0001425d       0x2a ./Core/Src/main.o
+ .debug_macro   0x00014287       0x43 ./Core/Src/main.o
+ .debug_macro   0x000142ca       0x34 ./Core/Src/main.o
+ .debug_macro   0x000142fe       0x16 ./Core/Src/main.o
+ .debug_macro   0x00014314       0x35 ./Core/Src/main.o
+ .debug_macro   0x00014349      0x369 ./Core/Src/main.o
+ .debug_macro   0x000146b2       0x10 ./Core/Src/main.o
+ .debug_macro   0x000146c2       0x16 ./Core/Src/main.o
+ .debug_macro   0x000146d8       0x43 ./Core/Src/main.o
+ .debug_macro   0x0001471b       0x34 ./Core/Src/main.o
+ .debug_macro   0x0001474f       0x10 ./Core/Src/main.o
+ .debug_macro   0x0001475f       0x58 ./Core/Src/main.o
+ .debug_macro   0x000147b7       0x8e ./Core/Src/main.o
+ .debug_macro   0x00014845       0x1c ./Core/Src/main.o
+ .debug_macro   0x00014861      0x177 ./Core/Src/main.o
+ .debug_macro   0x000149d8       0x16 ./Core/Src/main.o
+ .debug_macro   0x000149ee       0x16 ./Core/Src/main.o
+ .debug_macro   0x00014a04      0x146 ./Core/Src/main.o
  .debug_macro   0x00014b4a      0x2a0 ./Core/Src/mpu6050.o
  .debug_macro   0x00014dea       0x5b ./Core/Src/mpu6050.o
  .debug_macro   0x00014e45       0x94 ./Core/Src/mpu6050.o
