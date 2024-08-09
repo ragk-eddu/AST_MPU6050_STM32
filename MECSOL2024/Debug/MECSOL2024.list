@@ -2037,8 +2037,9 @@ int main(void)
  800147a:	4619      	mov	r1, r3
  800147c:	480b      	ldr	r0, [pc, #44]	@ (80014ac <main+0xfc>)
  800147e:	f004 f955 	bl	800572c <iprintf>
-	  HAL_Delay (10);
- 8001482:	200a      	movs	r0, #10
+
+	  HAL_Delay (0);
+ 8001482:	2000      	movs	r0, #0
  8001484:	f000 feb4 	bl	80021f0 <HAL_Delay>
 	  MPU6050_Read_All(&hi2c1, &MPU60501);
  8001488:	bf00      	nop

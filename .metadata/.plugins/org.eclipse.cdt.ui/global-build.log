@@ -383,3 +383,241 @@ arm-none-eabi-size  MECSOL2024.elf
   39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
 Finished building: default.size.stdout
  
+22:30:05 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+22:31:35 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+22:31:50 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+22:33:31 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+22:39:40 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:03:45 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:06:10 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:06:44 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:07:11 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:07:59 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:12:08 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:12:43 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:13:06 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:13:38 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:14:04 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:17:38 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:18:38 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:20:56 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:22:00 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+23:22:40 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:26:49 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39860	    488	   3192	  43540	   aa14	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:31:20 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IC:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "MECSOL2024.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\ceccc\Documents\GitHub\AST_MPU6050_STM32\MECSOL2024\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MECSOL2024.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: MECSOL2024.elf
+ 
+arm-none-eabi-size  MECSOL2024.elf 
+arm-none-eabi-objdump -h -S MECSOL2024.elf  > "MECSOL2024.list"
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+Finished building: MECSOL2024.list
+ 
+23:52:14 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 
+00:08:31 **** Incremental Build of configuration Debug for project MECSOL2024 ****
+make -j8 all 
+arm-none-eabi-size  MECSOL2024.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39820	    488	   3192	  43500	   a9ec	MECSOL2024.elf
+Finished building: default.size.stdout
+ 

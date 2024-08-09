@@ -117,10 +117,14 @@ int main(void)
 	  MPU6050_Read_All(&hi2c2, &MPU60502);
 	  MPU6050_Read_All(&hi2c3, &MPU60503);
 	  MPU6050_Read_All(&hi2c3, &MPU60504);
-	  printf("%d\t",MPU60501.Accel_Z_RAW);
-	  printf("%d\t",MPU60502.Accel_Z_RAW);
-	  printf("%d\t",MPU60503.Accel_Z_RAW);
-	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
+	  printf("%f\t",MPU60501.KalmanAngleX);
+	  printf("%f\t",MPU60502.KalmanAngleX);
+	  printf("%f\t",MPU60503.KalmanAngleX);
+	  printf("%f\t",MPU60504.KalmanAngleX);
+	  printf("%f\t",MPU60501.KalmanAngleY);
+	  printf("%f\t",MPU60502.KalmanAngleY);
+	  printf("%f\t",MPU60503.KalmanAngleY);
+	  printf("%f\t\n\r",MPU60504.KalmanAngleY);
 
 	  HAL_Delay (0);
   }
