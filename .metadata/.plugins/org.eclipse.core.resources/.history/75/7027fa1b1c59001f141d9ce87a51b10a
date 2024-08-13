@@ -50,7 +50,7 @@ MPU6050_t MPU60501;
 MPU6050_t MPU60502;
 MPU6050_t MPU60503;
 MPU6050_t MPU60504;
-double time;
+double timer;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -109,27 +109,26 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  time = 0;
   while (1)
   {
     /* USER CODE END WHILE */
 
-	  time = (double) (HAL_GetTick()) / 1000;
+	  timer = HAL_GetTick();
 //	  double dt = (double) (HAL_GetTick() - timer) / 1000;
 
     /* USER CODE BEGIN 3 */
-
-//	  if (1){
 	  MPU6050_Read_All(&hi2c1, &MPU60501);
 	  MPU6050_Read_All(&hi2c2, &MPU60502);
 	  MPU6050_Read_All(&hi2c3, &MPU60503);
 	  MPU6050_Read_All(&hi2c3, &MPU60504);
-	  printf("%f\t", time);
+
+
+//	  printf("%d\t", timer);
+
 	  printf("%d\t",MPU60501.Accel_Z_RAW);
 	  printf("%d\t",MPU60502.Accel_Z_RAW);
 	  printf("%d\t",MPU60503.Accel_Z_RAW);
 	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
-//	  } else { printf("\n\rO ensaio acabou!");}
 
 	  HAL_Delay (0);
   }
