@@ -52,6 +52,7 @@ MPU6050_t MPU60503;
 MPU6050_t MPU60504;
 //MPU6050_t MPU60505;
 double time;
+//int counter;
 //MPU6050_t MPU60506;
 /* USER CODE END PV */
 
@@ -80,7 +81,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+	HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -128,11 +129,13 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   time = 0;
+//  counter = 0;
    while (1)
    {
      /* USER CODE END WHILE */
 
  	  time = (double) (HAL_GetTick()) / 1000;
+// 	  counter += counter + 1;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -150,7 +153,9 @@ int main(void)
 	  printf("%f\t",MPU60504.KalmanAngleX);
 //	  printf("%f\t",MPU60505.KalmanAngleX);
 //	  printf("%f\t\n\r",MPU60506.KalmanAngleX);
+//	  printf("%f\t",counter);
 	  printf("%f\t\n\r", time);
+
 	  HAL_Delay (10);
   }
   /* USER CODE END 3 */
