@@ -137,17 +137,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-//	  MPU6050_Read_All(&hi2c1, &MPU60501, 1, 1, 1);
-//	  MPU6050_Read_All(&hi2c2, &MPU60502, 1, 1, 1);
-//	  MPU6050_Read_All(&hi2c3, &MPU60503, 1, 1, 1);
-//	  MPU6050_Read_All(&hi2c3, &MPU60504, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c1, &MPU60501, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c2, &MPU60502, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60503, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60504, 1, 1, 1);
 //	  MPU6050_Read_All(&hi2c3, &MPU60505, 1, 1, 1);
 //	  MPU6050_Read_All(&hi2c3, &MPU60506, 1, 1, 1);
 
-//	  printf("%f\t",MPU60501.KalmanAngleX);
-//	  printf("%f\t",MPU60502.KalmanAngleX);
-//	  printf("%f\t",MPU60503.KalmanAngleX);
-//	  printf("%f\t",MPU60504.KalmanAngleX);
+	  printf("%f\t",MPU60501.KalmanAngleX);
+	  printf("%f\t",MPU60502.KalmanAngleX);
+	  printf("%f\t",MPU60503.KalmanAngleX);
+	  printf("%f\t",MPU60504.KalmanAngleX);
 //	  printf("%f\t",MPU60505.KalmanAngleX);
 //	  printf("%f\t\n\r",MPU60506.KalmanAngleX);
 	  printf("%f\t\n\r", time);
