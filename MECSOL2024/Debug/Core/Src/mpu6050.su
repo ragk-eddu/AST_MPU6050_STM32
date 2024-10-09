@@ -4,4 +4,3 @@
 ../Core/Src/mpu6050.c:128:6:MPU6050_Read_Temp	40	static
 ../Core/Src/mpu6050.c:140:6:MPU6050_Read_All	128	static
 ../Core/Src/mpu6050.c:196:8:Kalman_getAngle	104	static
-../Core/Src/mpu6050.c:225:6:Calibration	48	static

@@ -222,31 +222,31 @@ double Kalman_getAngle(Kalman_t *Kalman, double newAngle, double newRate, double
     return Kalman->angle;
 }
 
-void Calibration(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct, float cX, float cY, float cZ) {
-
-	int16_t t = 0;
-	int16_t sX = 0;
-	int16_t sY = 0;
-	int16_t sZ = 0;
-
-//	while (timer < 5000) {
+//void Calibration(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct, float cX, float cY, float cZ) {
 //
-//		MPU6050_Read_All(*I2Cx, *DataStruct, cX, cY, cZ);
+//	int16_t t = 0;
+//	int16_t sX = 0;
+//	int16_t sY = 0;
+//	int16_t sZ = 0;
 //
-//		sX += (int16_t) (sX + DataStruct->Accel_X_RAW);
-//		sY += (int16_t) (sY + DataStruct->Accel_Y_RAW);
-//		sZ += (int16_t) (sZ + DataStruct->Accel_Z_RAW);
+////	while (timer < 5000) {
+////
+////		MPU6050_Read_All(*I2Cx, *DataStruct, cX, cY, cZ);
+////
+////		sX += (int16_t) (sX + DataStruct->Accel_X_RAW);
+////		sY += (int16_t) (sY + DataStruct->Accel_Y_RAW);
+////		sZ += (int16_t) (sZ + DataStruct->Accel_Z_RAW);
+////
+////		t += t + 1;
+////	}
 //
-//		t += t + 1;
-//	}
-
-	int16_t avgX = (int16_t) (sX / 1000);
-	int16_t avgY = (int16_t) (sY / 1000);
-	int16_t avgZ = (int16_t) (sZ / 1000);
-
-	DataStruct->Accel_X_RAW = (int16_t) (DataStruct->Accel_X_RAW - avgX);
-	DataStruct->Accel_Y_RAW = (int16_t) (DataStruct->Accel_Y_RAW - avgY);
-	DataStruct->Accel_Z_RAW = (int16_t) (DataStruct->Accel_Z_RAW - avgZ);
-
-};
+//	int16_t avgX = (int16_t) (sX / 1000);
+//	int16_t avgY = (int16_t) (sY / 1000);
+//	int16_t avgZ = (int16_t) (sZ / 1000);
+//
+//	DataStruct->Accel_X_RAW = (int16_t) (DataStruct->Accel_X_RAW - avgX);
+//	DataStruct->Accel_Y_RAW = (int16_t) (DataStruct->Accel_Y_RAW - avgY);
+//	DataStruct->Accel_Z_RAW = (int16_t) (DataStruct->Accel_Z_RAW - avgZ);
+//
+//};
 
