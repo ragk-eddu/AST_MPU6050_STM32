@@ -21,7 +21,6 @@
 #include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
-#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -67,6 +66,8 @@ void SystemClock_Config(void);
   * @brief  The application entry point.
   * @retval int
   */
+
+
 int main(void)
 {
 
@@ -91,12 +92,32 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
+<<<<<<< Updated upstream
+=======
   MX_GPIO_Init();
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   MX_I2C2_Init();
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
+//  HAL_I2C_Init(&hi2c1);
+//  while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
+////  while (MPU6050_Init(&MPU60502, &hi2c1, MPU6050_ADDR+2) == 1);
+//  HAL_I2C_Init(&hi2c2);
+//  while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1);
+////  while (MPU6050_Init(&MPU60504, &hi2c2, MPU6050_ADDR+2) == 1);
+//  HAL_I2C_Init(&hi2c3);
+//  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
+//  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1);
+//
+>>>>>>> Stashed changes
+  MX_GPIO_Init();
+  MX_USART2_UART_Init();
+  MX_I2C1_Init();
+  MX_I2C2_Init();
+  MX_I2C3_Init();
+  /* USER CODE BEGIN 2 */
+
   HAL_I2C_Init(&hi2c1);
   while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
   HAL_I2C_Init(&hi2c2);
@@ -108,6 +129,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+<<<<<<< Updated upstream
   while (1)
   {
     /* USER CODE END WHILE */
@@ -122,6 +144,38 @@ int main(void)
 	  printf("%d\t",MPU60503.Accel_Z_RAW);
 	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
 	  HAL_Delay (10);
+=======
+  time = 0;
+//  counter = 0;
+   while (1)
+   {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
+	  time = (double) (HAL_GetTick()) / 1000;
+
+	  MPU6050_Read_All(&hi2c1, &MPU60501, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c2, &MPU60502, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60503, 1, 1, 1);
+	  MPU6050_Read_All(&hi2c3, &MPU60504, 1, 1, 1);
+//	  MPU6050_Read_All(&hi2c3, &MPU60505, 1, 1, 1);
+//	  MPU6050_Read_All(&hi2c3, &MPU60506, 1, 1, 1);
+// 		IMPORTANTE
+//	  printf("%f\t",MPU60501.KalmanAngleX);
+//	  printf("%f\t",MPU60502.KalmanAngleX);
+//	  printf("%f\t",MPU60503.KalmanAngleX);
+//	  printf("%f\t",MPU60504.KalmanAngleX);
+//	  printf("%f\t",MPU60505.KalmanAngleX);
+
+//	  DEIXAR COMENTADO
+//	  printf("%f\t\n\r",MPU60506.KalmanAngleX);
+//	  printf("%f\t",counter);
+
+//	  IMPORTANTE
+//	  printf("%f\t\n\r", time);
+//
+//	  HAL_Delay (10);
+>>>>>>> Stashed changes
   }
   /* USER CODE END 3 */
 }
@@ -139,6 +193,11 @@ void SystemClock_Config(void)
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_RCC_I2C2_FORCE_RESET();
+
+     HAL_Delay(1000);
+
+  __HAL_RCC_I2C2_RELEASE_RESET();
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
