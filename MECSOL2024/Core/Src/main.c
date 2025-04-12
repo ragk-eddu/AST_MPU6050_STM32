@@ -51,6 +51,9 @@ MPU6050_t MPU60502;
 MPU6050_t MPU60503;
 MPU6050_t MPU60504;
 double time;
+#define MAX_INIT_RETRIES 100
+int retries;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -78,7 +81,8 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+
+	HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -98,13 +102,29 @@ int main(void)
   MX_I2C2_Init();
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
+
   HAL_I2C_Init(&hi2c1);
-  while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
+
+  while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1 && retries < MAX_INIT_RETRIES) {
+	  HAL_Delay(100);
+	  retries++;
+  }
+
   HAL_I2C_Init(&hi2c2);
-  while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1);
+  while (MPU6050_Init(&MPU60502, &hi2c2, MPU6050_ADDR) == 1 && retries < MAX_INIT_RETRIES) {
+	  HAL_Delay(100);
+	  retries++;
+  }
+
   HAL_I2C_Init(&hi2c3);
-  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1);
-  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1);
+  while (MPU6050_Init(&MPU60503, &hi2c3, MPU6050_ADDR) == 1 && retries < MAX_INIT_RETRIES) {
+	  HAL_Delay(100);
+	  retries++;
+  }
+  while (MPU6050_Init(&MPU60504, &hi2c3, MPU6050_ADDR+2) == 1 && retries < MAX_INIT_RETRIES) {
+	  HAL_Delay(100);
+	  retries++;
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
