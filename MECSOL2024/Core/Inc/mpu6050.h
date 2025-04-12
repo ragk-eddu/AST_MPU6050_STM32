@@ -26,6 +26,9 @@
 
 // Setup MPU6050
 #define MPU6050_ADDR 0xD0
+#define PWR_MGMT_1   0x6B
+#define SMPLRT_DIV   0x19
+#define CONFIG       0x1A
 
 // MPU6050 structure
 typedef struct {

@@ -76,6 +76,17 @@ uint8_t MPU6050_Init(MPU6050_t *mpu, I2C_HandleTypeDef *I2Cx, uint8_t address) {
         // XG_ST=0,YG_ST=0,ZG_ST=0, FS_SEL=0 -> � 250 �/s
         Data = 0x00;
         HAL_I2C_Mem_Write(I2Cx, address, GYRO_CONFIG_REG, 1, &Data, 1, i2c_timeout);
+
+        // START RATE CHANGE
+        Data = 0x00;
+		HAL_I2C_Mem_Write(I2Cx, address, SMPLRT_DIV, 1, &Data, 1, i2c_timeout);
+//		if (ret != HAL_OK) return 2;
+
+		// No Filters
+		Data = 0x00;
+		HAL_I2C_Mem_Write(I2Cx, address, CONFIG, 1, &Data, 1, i2c_timeout);
+
+
         return 0;
     }
     return 1;
