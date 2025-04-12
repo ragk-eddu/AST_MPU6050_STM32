@@ -51,6 +51,7 @@ MPU6050_t MPU60501;
 MPU6050_t MPU60502;
 MPU6050_t MPU60503;
 MPU6050_t MPU60504;
+double time;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -134,6 +135,7 @@ int main(void)
 	  printf("%d\t",MPU60503.Accel_Z_RAW);
 	  printf("%d\t\n\r",MPU60504.Accel_Z_RAW);
 	  HAL_Delay (10);
+	  time = (double) (HAL_GetTick()) / 1000;
   }
   /* USER CODE END 3 */
 }
