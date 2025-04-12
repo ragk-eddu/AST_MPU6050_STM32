@@ -21,7 +21,6 @@
 #include "i2c.h"
 #include "usart.h"
 #include "gpio.h"
-#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -81,7 +80,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-	HAL_Init();
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -95,12 +94,12 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-//  MX_GPIO_Init();
-//  MX_USART2_UART_Init();
-//  MX_I2C1_Init();
-//  MX_I2C2_Init();
-//  MX_I2C3_Init();
-//  /* USER CODE BEGIN 2 */
+  MX_GPIO_Init();
+  MX_USART2_UART_Init();
+  MX_I2C1_Init();
+  MX_I2C2_Init();
+  MX_I2C3_Init();
+  /* USER CODE BEGIN 2 */
 //  HAL_I2C_Init(&hi2c1);
 //  while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
 ////  while (MPU6050_Init(&MPU60502, &hi2c1, MPU6050_ADDR+2) == 1);
@@ -132,10 +131,6 @@ int main(void)
 //  counter = 0;
    while (1)
    {
-     /* USER CODE END WHILE */
-
- 	  time = (double) (HAL_GetTick()) / 1000;
-// 	  counter += counter + 1;
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -157,6 +152,7 @@ int main(void)
 //	  printf("%f\t\n\r", time);
 
 //	  HAL_Delay (10);
+	  time = (double) (HAL_GetTick()) / 1000;
   }
   /* USER CODE END 3 */
 }
@@ -174,6 +170,14 @@ void SystemClock_Config(void)
   */
   __HAL_RCC_PWR_CLK_ENABLE();
   __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_RCC_I2C2_FORCE_RESET();
+
+     HAL_Delay(10);
+
+  __HAL_RCC_I2C2_RELEASE_RESET();
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
