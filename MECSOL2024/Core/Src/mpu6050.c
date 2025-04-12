@@ -137,7 +137,7 @@ void MPU6050_Read_Temp(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
     DataStruct->Temperature = (float) ((int16_t) temp / (float) 340.0 + (float) 36.53);
 }
 
-void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
+HAL_StatusTypeDef  MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
     uint8_t Rec_Data[14];
     int16_t temp;
 
@@ -183,6 +183,12 @@ void MPU6050_Read_All(I2C_HandleTypeDef *I2Cx, MPU6050_t *DataStruct) {
         DataStruct->Gx = -DataStruct->Gx;
     DataStruct->KalmanAngleX = Kalman_getAngle(&(DataStruct->KalmanX), roll, DataStruct->Gy, dt);
 
+    // read operations
+    if (HAL_I2C_Mem_Read(I2Cx, DataStruct->address, ACCEL_XOUT_H_REG, 1, Rec_Data, 14, i2c_timeout) != HAL_OK) {
+        return HAL_ERROR;
+    }
+
+    return HAL_OK;
 }
 
 double Kalman_getAngle(Kalman_t *Kalman, double newAngle, double newRate, double dt) {

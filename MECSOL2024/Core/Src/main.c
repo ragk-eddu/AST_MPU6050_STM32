@@ -19,13 +19,14 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "iwdg.h"
 #include "usart.h"
 #include "gpio.h"
-#include <stdio.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "mpu6050.h"
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,6 +97,7 @@ int main(void)
   MX_I2C1_Init();
   MX_I2C2_Init();
   MX_I2C3_Init();
+  MX_IWDG_Init();
   /* USER CODE BEGIN 2 */
   HAL_I2C_Init(&hi2c1);
   while (MPU6050_Init(&MPU60501, &hi2c1, MPU6050_ADDR) == 1);
@@ -113,10 +115,20 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  MPU6050_Read_All(&hi2c1, &MPU60501);
-	  MPU6050_Read_All(&hi2c2, &MPU60502);
-	  MPU6050_Read_All(&hi2c3, &MPU60503);
-	  MPU6050_Read_All(&hi2c3, &MPU60504);
+
+	    if (MPU6050_Read_All(&hi2c1, &MPU60501) == 0 ||
+	        MPU6050_Read_All(&hi2c2, &MPU60502) == 0 ||
+	        MPU6050_Read_All(&hi2c3, &MPU60503) == 0 ||
+	        MPU6050_Read_All(&hi2c3, &MPU60504) == 0)
+	    {
+	        HAL_IWDG_Refresh(&hiwdg);  // Reset the watchdog only if sensors respond correctly
+	    }
+
+
+//	  MPU605SS0_Read_All(&hi2c1, &MPU60501);
+//	  MPU6050_Read_All(&hi2c2, &MPU60502);
+//	  MPU6050_Read_All(&hi2c3, &MPU60503);
+//	  MPU6050_Read_All(&hi2c3, &MPU60504);
 	  printf("%d\t",MPU60501.Accel_Z_RAW);
 	  printf("%d\t",MPU60502.Accel_Z_RAW);
 	  printf("%d\t",MPU60503.Accel_Z_RAW);
@@ -143,9 +155,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
   RCC_OscInitStruct.PLL.PLLM = 16;

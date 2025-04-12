@@ -1,5 +1,5 @@
-Core/Src/mpu6050.o: ../Core/Src/mpu6050.c ../Core/Inc/mpu6050.h \
- ../Core/Inc/i2c.h ../Core/Inc/main.h \
+Drivers/STM32F4xx_HAL_Driver/stm32f4xx_hal_iwdg.o: \
+ C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c \
  C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -29,9 +29,6 @@ Core/Src/mpu6050.o: ../Core/Src/mpu6050.c ../Core/Inc/mpu6050.h \
  C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-../Core/Inc/mpu6050.h:
-../Core/Inc/i2c.h:
-../Core/Inc/main.h:
 C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 C:/Users/ceccc/STM32Cube/Repository/STM32Cube_FW_F4_V1.28.0/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
