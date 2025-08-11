@@ -1,0 +1,15 @@
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-08-10 21:35:14.161
+!MESSAGE Indexed 'MECSOL2024' (27 sources, 87 headers) in 6.19 sec: 5,591 declarations; 34,612 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.005%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-08-10 21:39:34.226
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 1 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2025-08-10 21:39:34.227
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 2 2 2025-08-10 21:49:57.956
+!MESSAGE ST-LINK firmware verification, Check required failed
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 2 2 2025-08-10 21:49:57.957
+!MESSAGE ST-LINK firmware verification, No latest info found: -1
