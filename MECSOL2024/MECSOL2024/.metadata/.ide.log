@@ -876,3 +876,65 @@
 2025-08-10 21:49:54,907 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1213mS.
 2025-08-10 21:49:54,908 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
 2025-08-10 21:49:54,915 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2025-08-10 22:31:13,860 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:13,861 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,205 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,205 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,205 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,205 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,254 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2025-08-10 22:31:21,293 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,293 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,306 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:21,306 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:24,740 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 901325320 Bytes (1073741824)
+2025-08-10 22:31:26,293 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 922297672 Bytes (1073741824)
+2025-08-10 22:31:28,320 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 764584984 Bytes (1073741824)
+2025-08-10 22:31:28,628 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2025-08-10 22:31:28,629 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2025-08-10 22:31:28,629 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2025-08-10 22:31:28,629 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2025-08-10 22:31:28,629 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2025-08-10 22:31:28,629 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2025-08-10 22:31:28,631 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\
+2025-08-10 22:31:28,633 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:28,633 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:28,791 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\MXTmpFiles\license.tmp_save
+2025-08-10 22:31:28,892 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\MXTmpFiles\license.tmp
+2025-08-10 22:31:28,962 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\gpio.c_save
+2025-08-10 22:31:29,077 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\gpio.c
+2025-08-10 22:31:29,103 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\gpio.h_save
+2025-08-10 22:31:29,198 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\gpio.h
+2025-08-10 22:31:29,369 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\i2c.c_save
+2025-08-10 22:31:29,529 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\i2c.c
+2025-08-10 22:31:29,568 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\i2c.h_save
+2025-08-10 22:31:29,669 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\i2c.h
+2025-08-10 22:31:29,768 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\usart.c_save
+2025-08-10 22:31:29,885 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\usart.c
+2025-08-10 22:31:29,894 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\usart.h_save
+2025-08-10 22:31:29,987 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\usart.h
+2025-08-10 22:31:30,022 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\stm32f4xx_it.c_save
+2025-08-10 22:31:30,217 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\stm32f4xx_it.c
+2025-08-10 22:31:30,244 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\stm32f4xx_it.h_save
+2025-08-10 22:31:30,341 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\stm32f4xx_it.h
+2025-08-10 22:31:30,381 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\stm32f4xx_hal_msp.c_save
+2025-08-10 22:31:30,511 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\stm32f4xx_hal_msp.c
+2025-08-10 22:31:30,525 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\MXTmpFiles\system.tmp_save
+2025-08-10 22:31:30,602 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\MXTmpFiles\system.tmp
+2025-08-10 22:31:30,641 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\stm32f4xx_hal_conf.h_save
+2025-08-10 22:31:30,738 [INFO] CodeEngine:335 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\stm32f4xx_hal_conf.h
+2025-08-10 22:31:30,817 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\main.h_save
+2025-08-10 22:31:30,940 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Inc\main.h
+2025-08-10 22:31:30,968 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\main.c_save
+2025-08-10 22:31:31,086 [INFO] CodeEngine:279 - Generated code: C:\Users\eduar\Documents\GitHub\GVT\AST_MPU6050_STM32\MECSOL2024\MECSOL2024\MECSOL2024\Core\Src\main.c
+2025-08-10 22:31:31,275 [INFO] ProjectBuilder:3163 - Time for Copy HAL[2] : 1mS.
+2025-08-10 22:31:31,284 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2025-08-10 22:31:31,381 [INFO] ConfigFileManager:1503 - The Die is : DIE431
+2025-08-10 22:31:32,680 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1396mS.
+2025-08-10 22:31:32,681 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2025-08-10 22:31:32,685 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
+2025-08-10 22:31:50,449 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:50,450 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:50,457 [WARN] IP:2120 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2025-08-10 22:31:50,457 [WARN] IP:2120 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2025-08-10 22:58:05,583 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
